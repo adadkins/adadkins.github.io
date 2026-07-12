@@ -148,9 +148,32 @@
     }
 
     .job-desc {
+      list-style: none;
       font-size: 12px;
-      line-height: 1.9;
+      line-height: 1.8;
       color: var(--muted);
+    }
+
+    .job-desc li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 8px;
+    }
+
+    .job-desc li:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-desc strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .job-desc li::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
     }
 
     /* Skills */
@@ -235,7 +258,15 @@
           <span class="job-date">2023 – Present</span>
         </div>
         <div class="job-company">Chipotle · Newport Beach, CA</div>
-        <p class="job-desc">Led a 3-person SDET team delivering in-sprint automation and 99%+ CI/CD pipeline stability. Built a unified Playwright suite across US, Canada, and UK markets. Engineered an Adobe Analytics validation framework via API integration and orchestrated a zero-defect migration from Salesforce to ServiceNow. Reduced UK regression time by 30%.</p>
+        <ul class="job-desc">
+          <li><strong>Front-End Automation Leadership:</strong> Directed a 3-person SDET team to deliver in-sprint feature automation and close critical smoke test gaps, while modernizing legacy test suites and streamlining failure triage to minimize flakiness and maintain consistent pipeline health</li>
+          <li><strong>Enterprise Platform Migration:</strong> Orchestrated the QE and automation strategy for a high-stakes migration of the Customer Service platform from Salesforce to ServiceNow, ensuring zero-defect deployment</li>
+          <li><strong>AI & Tooling Enablement:</strong> Led team adoption of Playwright, Azure DevOps, and Atlassian MCP integrations while authoring Copilot instructions, best practices documentation, and custom automation skills to accelerate AI-assisted development workflows</li>
+          <li><strong>Internal MCP Quality Framework:</strong> Directed the first internal MCP server automation initiative, guiding a mid-level engineer's test-coverage work for MCP Tools and Prompts through in-depth technical review and MCP architecture guidance</li>
+          <li><strong>Analytics Validation Architecture:</strong> Engineered a custom framework to programmatically verify Adobe Analytics events on the customer-facing site via API integration, ensuring 100% data integrity for business-critical reporting</li>
+          <li><strong>Global Quality Standardization:</strong> Implemented a unified Playwright automation suite for US, Canada, and UK platforms, ensuring feature parity and localized functional integrity across international markets</li>
+          <li><strong>CI/CD Pipeline Integration:</strong> Integrated automated UI and API test suites with real-time reporting into deployment pipelines, accelerating the feedback loop and reducing time to resolution</li>
+        </ul>
       </div>
 
       <div class="job">
@@ -244,7 +275,10 @@
           <span class="job-date">2022 – 2023</span>
         </div>
         <div class="job-company">Indeed · Remote</div>
-        <p class="job-desc">Built TestCafe and JUnit test suites for React and Java services. Migrated CI from Jenkins to GitLab CI, enabling fully automated deployments from QA to production.</p>
+        <ul class="job-desc">
+          <li>Built TestCafe and JUnit test suites for React and Java services</li>
+          <li>Migrated CI from Jenkins to GitLab CI, enabling fully automated deployments from QA to production</li>
+        </ul>
       </div>
 
       <div class="job">
@@ -253,7 +287,12 @@
           <span class="job-date">2019 – 2022</span>
         </div>
         <div class="job-company">Omaze · Culver City, CA</div>
-        <p class="job-desc">Developed the public GraphQL API and integrated Auth0 authentication. Migrated repos to GitHub Actions and built Cypress and Go test suites for customer-facing flows. Championed TDD across engineering teams.</p>
+        <ul class="job-desc">
+          <li>Developed the public GraphQL API and integrated Auth0 authentication</li>
+          <li>Migrated repos to GitHub Actions</li>
+          <li>Built Cypress and Go test suites for customer-facing flows</li>
+          <li>Championed TDD across engineering teams</li>
+        </ul>
       </div>
 
       <div class="job">
@@ -262,7 +301,11 @@
           <span class="job-date">2015 – 2019</span>
         </div>
         <div class="job-company">TivityHealth · Chandler, AZ</div>
-        <p class="job-desc">Performed system, regression, and acceptance testing across web, API, and SQL layers. Began automating workflows with testing frameworks and collaborated with developers on feature design.</p>
+        <ul class="job-desc">
+          <li>Performed system, regression, and acceptance testing across web, API, and SQL layers</li>
+          <li>Began automating workflows with testing frameworks</li>
+          <li>Collaborated with developers on feature design</li>
+        </ul>
       </div>
     </section>
 
